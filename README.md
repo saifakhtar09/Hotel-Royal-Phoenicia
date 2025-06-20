@@ -1,13 +1,43 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🏨 Hotel Royal Phoenicia
 
-Currently, two official plugins are available:
+Hotel Royal Phoenicia is a modern, elegant hotel website built with **Vite**, **Tailwind CSS**, and modern JavaScript. It showcases a responsive and luxurious user interface ideal for real-world hotel or hospitality platforms.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌐 Live Demo
+  deploy on  [Netlify](https://hotelroyalphonenicia.netlify.app/), or your custom hosting provider.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
- 
+---
+
+## ✨ Features
+
+- 📱 **Responsive Design** – Mobile-first layout with Tailwind CSS
+- ⚡ **Lightning Fast** – Built using Vite for blazing fast development
+- 🌈 **Modern UI** – Clean and elegant design
+- 📁 **Organized Codebase** – Scalable structure for future enhancements
+- 🧠 **Easy to Customize** – Tailwind and modular components
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend**: Vite, Tailwind CSS, HTML5, JavaScript (or React if used)
+- **Tooling**: ESLint, PostCSS, Git/GitHub
+
+---
+1. Install dependencies
+npm install
+2. Run development server
+npm run dev
+
+3. Build for production
+npm run build
+
+
+🙌 Author
+Saif Akhtar
+🌐 GitHub
+📧 [Saifwork112@gmail.com]
+
