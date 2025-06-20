@@ -168,25 +168,41 @@ const Header = () => {
       </nav>
 
       {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Sidebar (Blur Only, No BG Color) */}
       {isMenuOpen && (
-        <div className="fixed inset-0 backdrop-blur-md z-50 md:hidden">
-          <div className="flex items-center justify-between p-4 border-b border-white/10">
-            <span className="text-white font-medium">Menu</span>
-            <button onClick={toggleMenu} className="text-white hover:text-gray-200 transition-colors">
-              <X size={24} />
-            </button>
-          </div>
-          <div className="flex flex-col space-y-6 p-6">
-            {navItems.map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className="text-white hover:text-gray-200 text-lg font-medium tracking-wider transition-colors border-b border-white/10 pb-4"
+        <div className="fixed inset-0 z-50 md:hidden">
+          {/* Backdrop with heavy blur */}
+          <div
+            className="absolute inset-0 bg-black/60 backdrop-blur-[8px]"
+            onClick={toggleMenu}
+          ></div>
+
+          {/* Transparent Sidebar with blur */}
+          <div className="absolute top-0 right-0 h-fit max-h-[380px] w-3/4 max-w-sm backdrop-blur-[12px] bg-white/5 rounded-bl-2xl shadow-2xl p-4 transition-transform duration-300 ease-in-out transform translate-x-0 border border-white/10">
+            {/* Header */}
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-lg font-semibold text-white">Menu</span>
+              <button
                 onClick={toggleMenu}
+                className="text-white hover:text-gray-300 transition-colors"
               >
-                {item}
-              </a>
-            ))}
+                <X size={22} />
+              </button>
+            </div>
+
+            {/* Menu Items */}
+            <nav className="flex flex-col gap-3">
+              {navItems.map((item) => (
+                <a
+                  key={item}
+                  href={`#${item.toLowerCase()}`}
+                  className="text-sm font-medium text-white hover:text-blue-300 transition-colors border-b border-white/10 pb-1"
+                  onClick={toggleMenu}
+                >
+                  {item}
+                </a>
+              ))}
+            </nav>
           </div>
         </div>
       )}
