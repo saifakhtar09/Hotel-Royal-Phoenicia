@@ -170,15 +170,15 @@ const Header = () => {
       {/* Mobile Menu Overlay */}
       {/* Mobile Menu Sidebar (Blur Only, No BG Color) */}
       {isMenuOpen && (
-        <div className="fixed inset-0 z-50 md:hidden">
+        <div className="relative  inset-0 z-30 md:hidden">
           {/* Backdrop with heavy blur */}
           <div
-            className="absolute inset-0 bg-black/60 backdrop-blur-[8px]"
+            className="absolute inset-0 bg-black/60 backdrop-blur-[10px]"
             onClick={toggleMenu}
           ></div>
 
           {/* Transparent Sidebar with blur */}
-          <div className="absolute top-0 right-0 h-fit max-h-[380px] w-3/4 max-w-sm backdrop-blur-[12px] bg-white/5 rounded-bl-2xl shadow-2xl p-4 transition-transform duration-300 ease-in-out transform translate-x-0 border border-white/10">
+          <div className="absolute top-0 right-0  h-fit max-h-[270px] w-full   backdrop-blur-[12px] bg-white/5 rounded-bl-2xl shadow-2xl p-4 transition-transform duration-300 ease-in-out transform translate-x-0 border border-white/10">
             {/* Header */}
             <div className="flex items-center justify-between mb-4">
               <span className="text-lg font-semibold text-white">Menu</span>
