@@ -7,7 +7,7 @@ Hotel Royal Phoenicia is a modern, elegant hotel website built with **Vite**, **
 ---
 
 ## 🌐 Live Demo
-  deploy on  [Netlify](https://hotelroyalphonenicia.netlify.app/), or your custom hosting provider.
+  deploy on  [Netlify](https://hotelroyalproject.netlify.app/),.
 
 ---
 
@@ -23,7 +23,7 @@ Hotel Royal Phoenicia is a modern, elegant hotel website built with **Vite**, **
 
 ## 🛠 Tech Stack
 
-- **Frontend**: Vite, Tailwind CSS, HTML5, JavaScript (or React if used)
+- **Frontend**: Vite, Tailwind CSS, HTML5, JavaScript and React 
 - **Tooling**: ESLint, PostCSS, Git/GitHub
 
 ---
